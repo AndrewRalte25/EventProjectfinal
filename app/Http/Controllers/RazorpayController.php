@@ -8,7 +8,7 @@ use App\Models\Event;
 use App\Models\Ticket;
 use Razorpay\Api\Api;
 
-use Illuminate\Support\Facades\App;
+    use Illuminate\Support\Facades\App;
 
 class RazorpayController extends Controller
 {
@@ -72,8 +72,6 @@ public function invoice($id)
     $pdf->loadView('invoice', compact('order'))->setOptions(['defaultFont' => 'sans-serif']);
     $pdf->setPaper(array(0, 0, 396, 612));
     return $pdf->stream();
-    
-     
 }
 
 

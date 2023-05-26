@@ -37,7 +37,7 @@
                                 @csrf
                                 <script src="https://checkout.razorpay.com/v1/checkout.js"
                                     data-key="{{ env('RAZOR_KEY') }}"
-                                    data-amount="{{ $event->Price*100 }}"
+                                    data-amount="{{ $event->price*100 }}"
                                     data-buttontext="BOOK"
                                     data-name="EVENT BOOKING"
                                     data-description="Razorpay payment"
